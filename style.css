@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(189, 255, 255);
+  
+}
+.Container{
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.Container .color{
+    list-style: none;
+    margin: 13px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
+    transition: transform 0.3s ease;
+    /* margin: 10px; */
+    
+}
+.Container .color:active{
+    transform: scale(0.95);
+
+}
+.color .react-box{
+    border-radius: 5px;
+    width: 195px;
+    height: 200px ;
+    background: #8A6CFF;
+}
+.color :hover .react-box{
+    filter:brightness(106%) ;
+}
+.color .hex-value{
+    display: block;
+    margin: 10px 0 8px;
+    color: #444;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.refresh-btn{
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    outline: none;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #8A6CFf;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(52, 87, 220, 0.08);
+    transform: translateX(-50%);
+}
+.refresh-btn:hover{
+    background-color: #704eeb;
+    color: rgb(235, 241, 241);
+    box-shadow: 0 15px 25px rgba(52, 87, 220, 0.08);
+}
